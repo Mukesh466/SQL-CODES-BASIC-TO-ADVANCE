@@ -1,11 +1,20 @@
-SELECT * 
-FROM parks_and_recreation.employee_demographics;
+select *
+from parks_and_recreation.employee_salary
+where salary <= 50000
+;
 
-SELECT first_name,
-last_name,
-age,
-(age+10)*10 /10
-FROM parks_and_recreation.employee_demographics;
+select *
+from parks_and_recreation.employee_demographics
+where gender = 'Female'
+;
 
-select distinct gender
-FROM parks_and_recreation.employee_demographics;
+select *
+from parks_and_recreation.employee_demographics
+where age > 30
+and gender = 'male'
+;
+
+select *
+from parks_and_recreation.employee_demographics
+where first_name like 'a%'
+;
