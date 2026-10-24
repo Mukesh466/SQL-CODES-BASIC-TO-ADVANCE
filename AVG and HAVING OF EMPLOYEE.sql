@@ -5,3 +5,5 @@ from employee
 group by department
 having count(*) > 3;
 --here we used count,having,group by , avg
+
+.....
